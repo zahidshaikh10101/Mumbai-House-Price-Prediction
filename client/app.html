@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mumbai House Price Prediction</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3><span class="marathi">मुं</span>bai House Price Prediction</h3>
+                        <p>Fill in the field below.</p>
+                        <form class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="uiSqft" id="uiSqft" placeholder="Area sqft" required>
+                               <div class="valid-feedback">Area field is valid!</div>
+                               <div class="invalid-feedback">Area field cannot be blank!</div>
+                            </div>
+                           <div class="col-md-12">
+                                <select class="form-select mt-3" required>
+                                      <option selected disabled value="">Bedrooms</option>
+                                      <option value="1" name="uiBHK">1 BHK</option>
+                                      <option value="2" name="uiBHK">2 BHK</option>
+                                      <option value="3" name="uiBHK">3 BHK</option>
+                                      <option value="4" name="uiBHK">4 BHK</option>
+                                      <option value="5" name="uiBHK">5 BHK</option>
+                               </select>
+                                <div class="valid-feedback">You selected Bedrooms!</div>
+                                <div class="invalid-feedback">Please select Bedrooms!</div>
+                           </div>
+                           <div class="col-md-12 mt-3">
+                            <label class="mb-3 mr-1" for="gym">Gym: </label>
+
+                            <input type="radio" class="btn-check" name="uiGym" id="gymyes" value="1" autocomplete="off" required>
+                            <label class="btn btn-sm btn-outline-secondary" for="gymyes">Yes</label>
+
+                            <input type="radio" class="btn-check" name="uiGym" id="gymno" value="0" autocomplete="off" required>
+                            <label class="btn btn-sm btn-outline-secondary" for="gymno">No</label>
+                               <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="mb-3 mr-1" for="lift">Lift: </label>
+    
+                                <input type="radio" class="btn-check" name="uiLift" id="liftyes" value="1" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="liftyes">Yes</label>
+    
+                                <input type="radio" class="btn-check" name="uiLift" id="liftno" value="0" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="liftno">No</label>
+                                   <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                    <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="car">Car Parking: </label>
+    
+                                <input type="radio" class="btn-check" name="uiCar" id="caryes" value="1" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="caryes">Yes</label>
+    
+                                <input type="radio" class="btn-check" name="uiCar" id="carno" value="0" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="carno">No</label>
+                                   <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                    <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                            
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <label class="mb-3 mr-1" for="security">Security: </label>
+    
+                                <input type="radio" class="btn-check" name="uiSecurity" id="securityyes" value="1" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="securityyes">Yes</label>
+    
+                                <input type="radio" class="btn-check" name="uiSecurity" id="securityno" value="0" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="securityno">No</label>
+                                   <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                    <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <label class="mb-3 mr-1" for="garden">Garden: </label>
+        
+                                    <input type="radio" class="btn-check" name="uiGarden" id="gardenyes" value="1" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="gardenyes">Yes</label>
+        
+                                    <input type="radio" class="btn-check" name="uiGarden" id="gardenno" value="0" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="gardenno">No</label>
+                                       <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                        <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                                
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <label class="mb-3 mr-1" for="pool">Swimming Pool: </label>
+        
+                                    <input type="radio" class="btn-check" name="uiPool" id="poolyes" value="1" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="poolyes">Yes</label>
+        
+                                    <input type="radio" class="btn-check" name="uiPool" id="poolno" value="0" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="poolno">No</label>
+                                       <!-- <div class="valid-feedback mv-up">Thank you for selecting!</div>
+                                        <div class="invalid-feedback mv-up">Please select a Yes/No!</div> -->
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-select mt-3" id="uiLocations" required>
+                                          <option selected disabled value="">Location</option>
+                                          <option value="colaba">Colaba</option>
+                                          <option value="bandra">Bandra</option>
+                                          <option value="thane">Thane</option>
+                                          <option value="andheri">Andheri</option>
+                                   </select>
+                                    <div class="valid-feedback">You selected Location!</div>
+                                    <div class="invalid-feedback">Please select Location!</div>
+                               </div>
+
+                           <!-- <div class="col-md-12">
+                              <input class="form-control" type="password" name="password" placeholder="Password" required>
+                               <div class="valid-feedback">Password field is valid!</div>
+                               <div class="invalid-feedback">Password field cannot be blank!</div>
+                           </div> -->
+
+                        <!-- <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label">I confirm that all data are correct</label>
+                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                        </div> -->
+                  
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="button" class="btn btn-primary" onclick="onClickedEstimatePrice()">PREDICT 🧐</button>
+                            </div>
+                            <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- partial -->
+  
+
+</body>
+</html>
